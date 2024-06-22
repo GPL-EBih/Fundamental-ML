@@ -101,7 +101,7 @@ The models are evaluated using the following metrics:
 - F1-Score
 
 ## Results
-### Results colected from models
+### Results collected from models
 | Model                | Data Type         | Accuracy | Macro Precision | Macro Recall | Macro F1-Score | Weighted Precision | Weighted Recall | Weighted F1-Score |
 |----------------------|-------------------|----------|-----------------|--------------|----------------|--------------------|-----------------|--------------------|
 | RandomForest         | Original          | 0.470    | 0.580           | 0.410        | 0.430          | 0.500              | 0.470           | 0.450              |
