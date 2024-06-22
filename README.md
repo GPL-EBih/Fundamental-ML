@@ -78,13 +78,13 @@ The goal of this project is to categorize emotions according to text input. To d
 
 ## Dataset
 
-The project's dataset comprises textual data that has been annotated with various emotions. To evaluate the model, the data is divided into training and test sets.
+The dataset for this project consists of textual data annotated with various emotions, divided into training and test sets for model evaluation.
 
-Using the Facial Expression Recognition Challenge (FER2013) dataset, facial expression recognition research was conducted.
+Facial expression recognition research was conducted using the Facial Expression Recognition Challenge (FER2013) dataset.
 
-Algorithms can autonomously engineer features more effectively and efficiently than manual human efforts, which is one reason to emphasize representation learning. However, using representation learning is not specifically required in order to participate in this challenge. The dataset was specially created for facial expression classification and was collected from internet sources.
+One motivation for emphasizing representation learning is the ability of algorithms to autonomously engineer features more effectively and efficiently than manual human efforts. However, participation in this challenge does not mandate the use of representation learning. The dataset was specifically curated for facial expression classification and sourced from the internet.
 
-The 48x48 pixel grayscale portraits in the dataset are all of faces. The faces are positioned automatically so that they take up a constant amount of space in each image and are roughly centered. Sorting each face into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral) according to the emotion expressed is the goal. The dataset includes 35,887 examples in total.
+Each grayscale portrait in the dataset measures 48x48 pixels and depicts a face. Faces are automatically aligned to maintain consistent positioning within each image, roughly centered and occupying a standardized area. The primary task is to categorize each face into one of seven emotion categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). In total, the dataset comprises 35,887 examples.
 
 
 ## Preprocessing
@@ -130,7 +130,8 @@ The models are evaluated using the following metrics:
 
 - **Best Model for Original Data**: Random Forest
 - **Best Model for PCA-Transformed Data**: MLP
-- The models perform best on Emotion 5 and struggle with Emotion 0.
+
+- The models exhibit their highest performance when categorizing images depicting Emotion 5 (Surprise), but encounter difficulties when classifying images depicting Emotion 0 (Angry).
 
 ## Requirements
 
