@@ -68,7 +68,6 @@ This project aims to classify emotions from textual data using various machine l
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Usage](#usage)
 - [Requirements](#requirements)
 
 
