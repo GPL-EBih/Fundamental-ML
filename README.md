@@ -109,6 +109,19 @@ The models are evaluated using the following metrics:
 - F1-Score
 
 ## Results
+### Results collected from algorithms
+
+| Model                | Data Type         | Accuracy | Macro Precision | Macro Recall | Macro F1-Score | Weighted Precision | Weighted Recall | Weighted F1-Score |
+|----------------------|-------------------|----------|-----------------|--------------|----------------|--------------------|-----------------|--------------------|
+| RandomForest         | Original          | 0.470    | 0.580           | 0.410        | 0.430          | 0.500              | 0.470           | 0.450              |
+| LogisticRegression   | Original          | 0.362    | 0.410           | 0.300        | 0.290          | 0.350              | 0.360           | 0.340              |
+| NaiveBayes           | Original          | 0.212    | 0.220           | 0.220        | 0.170          | 0.270              | 0.210           | 0.200              |
+| MLP                  | Original          | 0.421    | 0.430           | 0.400        | 0.410          | 0.430              | 0.420           | 0.420              |
+| RandomForest         | PCA-transformed   | 0.406    | 0.630           | 0.330        | 0.360          | 0.540              | 0.410           | 0.370              |
+| LogisticRegression   | PCA-transformed   | 0.370    | 0.430           | 0.290        | 0.290          | 0.360              | 0.370           | 0.340              |
+| NaiveBayes           | PCA-transformed   | 0.262    | 0.280           | 0.270        | 0.240          | 0.320              | 0.260           | 0.270              |
+| MLP                  | PCA-transformed   | 0.432    | 0.440           | 0.420        | 0.420          | 0.430              | 0.430           | 0.430              |
+
 
 ### Original Data
 - **Best Model**: Random Forest
