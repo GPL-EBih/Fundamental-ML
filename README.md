@@ -65,10 +65,10 @@ This project aims to classify emotions from textual data using various machine l
 
 
 ## Introduction
-
-The goal of this project is to categorize emotions according to text input. To do this, it makes use of a number of machine learning strategies, such as data preprocessing, principal component analysis (PCA) for dimensionality reduction, and model training and evaluation.
+This project aims to classify emotions based on textual input. It uses several machine learning techniques, including data preprocessing, principal component analysis (PCA) for dimensionality reduction, and model training and assessment, to achieve this.
 
 ## Dataset
+
 
 The dataset for this project consists of textual data annotated with various emotions, divided into training and test sets for model evaluation.
 
