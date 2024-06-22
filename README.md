@@ -38,8 +38,70 @@ This project is designed to be completed in the following steps:
 
     Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
 
-5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push themodels
+5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
 
+
+Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Emotion Classification Project
+
+This project aims to classify emotions from textual data using various machine learning models. The project involves preprocessing the data, performing PCA for dimensionality reduction, training multiple classifiers, and evaluating their performance.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Preprocessing](#preprocessing)
+- [Models](#models)
+- [Evaluation](#evaluation)
+- [Results](#results)
+- [Conclusion](#conclusion)
+- [Requirements](#requirements)
+
+
+## Introduction
+
+The goal of this project is to categorize emotions according to text input. To do this, it makes use of a number of machine learning strategies, such as data preprocessing, principal component analysis (PCA) for dimensionality reduction, and model training and evaluation.
+
+## Dataset
+
+The dataset for this project consists of textual data annotated with various emotions, divided into training and test sets for model evaluation.
+
+Facial expression recognition research was conducted using the Facial Expression Recognition Challenge (FER2013) dataset.
+
+One motivation for emphasizing representation learning is the ability of algorithms to autonomously engineer features more effectively and efficiently than manual human efforts. However, participation in this challenge does not mandate the use of representation learning. The dataset was specifically curated for facial expression classification and sourced from the internet.
+
+Each grayscale portrait in the dataset measures 48x48 pixels and depicts a face. Faces are automatically aligned to maintain consistent positioning within each image, roughly centered and occupying a standardized area. The primary task is to categorize each face into one of seven emotion categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). In total, the dataset comprises 35,887 examples.
+
+
+## Preprocessing
+
+1. **Text Cleaning**: tokenization, stopword removal, and special character removal.
+2. **Vectorization**: Using TF-IDF Vectorizer, text data is transformed into numerical format.
+3. **PCA**: Principal Component Analysis is used to minimize the dimensionality of the data.
+## Models
+
+Several models are trained and evaluated in this project:
+1. **Logistic Regression**
+2. **Naive Bayes**
+3. **Random Forest**
+4. **Multilayer Perceptron (MLP)**
+
+## Evaluation
+
+The models are evaluated using the following metrics:
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+
+## Results
+### Results colected from models
 | Model                | Data Type         | Accuracy | Macro Precision | Macro Recall | Macro F1-Score | Weighted Precision | Weighted Recall | Weighted F1-Score |
 |----------------------|-------------------|----------|-----------------|--------------|----------------|--------------------|-----------------|--------------------|
 | RandomForest         | Original          | 0.470    | 0.580           | 0.410        | 0.430          | 0.500              | 0.470           | 0.450              |
@@ -50,7 +112,6 @@ This project is designed to be completed in the following steps:
 | LogisticRegression   | PCA-transformed   | 0.370    | 0.430           | 0.290        | 0.290          | 0.360              | 0.370           | 0.340              |
 | NaiveBayes           | PCA-transformed   | 0.262    | 0.280           | 0.270        | 0.240          | 0.320              | 0.260           | 0.270              |
 | MLP                  | PCA-transformed   | 0.432    | 0.440           | 0.420        | 0.420          | 0.430              | 0.430           | 0.430              |
-
 
 ### Original Data
 - **Best Model**: Random Forest
